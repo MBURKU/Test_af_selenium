@@ -7,9 +7,8 @@ from robot_framework.sub_process.web_automation import BrowserAutomation
 def process(orchestrator_connection: OrchestratorConnection) -> None:
     """Do the primary process of the robot."""
     orchestrator_connection.log_trace("Running process.")
+    orchestrator_connection.log_trace("Test af selenium.")
 
-
-if __name__ == "__main__":
     automation = BrowserAutomation()
     automation.open_url('http://www.dr.dk')
 
